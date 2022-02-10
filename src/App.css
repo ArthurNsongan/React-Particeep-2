@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.MoviePage .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M2 5l6 6 6-6%27/%3e%3c/svg%3e")
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MovieCard {
+    width: 300px;
+    background-color: #333333;
+    border-radius: 20px;
+    margin: 10px;
+    object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MovieCard img {
+  height: 150px;
+  object-fit: cover;
+  object-position: bottom;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MovieCardFooter {
+  padding: 25px 20px;
+}
+
+.MoviesContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap:wrap ;
 }
 
-.App-link {
-  color: #61dafb;
+.bold {
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outline-none {
+  outline: none !important;
+}
+
+.shadow-0 {
+  box-shadow: none !important;
 }
