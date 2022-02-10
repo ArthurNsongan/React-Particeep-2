@@ -34,6 +34,7 @@ const MoviesList = (props) => {
     const categoriesList = []
         props.movies.filter( item => { 
             if( !categoriesList.includes(item.category) ) { categoriesList.push(item.category); return false } 
+            else {return true;}
     })
 
     const currentMovies = () => selectedCategories.length > 0 ? 

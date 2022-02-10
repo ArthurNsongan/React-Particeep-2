@@ -28,7 +28,7 @@ function Pagination({ currentPage, total, perPage, onChanged}) {
         <div className='d-flex'>
             <button className='btn btn-light px-0 rounded-circle m-1 shadow-0' 
                 onClick={() => { currentPage > 1 && onChanged(currentPage - 1)}}
-                disabled={currentPage == 1} style={{ width: '40px' }}>{'<'}</button>
+                disabled={currentPage === 1} style={{ width: '40px' }}>{'<'}</button>
             { <FormatPage />}
             <button className='btn btn-light px-0 rounded-circle m-1 shadow-0' onClick={() => { currentPage < pageNumber && onChanged(currentPage + 1)}} 
                 disabled={currentPage === pageNumber} style={{ width: '40px' }}>{'>'}</button>
